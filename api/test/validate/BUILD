@@ -24,6 +24,7 @@ api_cc_test(
         "//envoy/config/filter/http/lua/v2:lua",
         "//envoy/config/filter/http/router/v2:router",
         "//envoy/config/filter/http/squash/v2:squash",
+        "//envoy/config/filter/http/tap/v2alpha:tap",
         "//envoy/config/filter/http/transcoder/v2:transcoder",
         "//envoy/config/filter/network/http_connection_manager/v2:http_connection_manager",
         "//envoy/config/filter/network/mongo_proxy/v2:mongo_proxy",
