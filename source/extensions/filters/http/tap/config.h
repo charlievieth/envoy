@@ -18,10 +18,6 @@ class TapFilterFactory
 public:
   TapFilterFactory() : FactoryBase(HttpFilterNames::get().Tap) {}
 
-  Http::FilterFactoryCb
-  createFilterFactory(const Json::Object& json_config, const std::string& stats_prefix,
-                      Server::Configuration::FactoryContext& context) override;
-
 private:
   Http::FilterFactoryCb createFilterFactoryFromProtoTyped(
       const envoy::config::filter::http::tap::v2alpha::Tap& proto_config,

@@ -29,15 +29,6 @@ Http::FilterFactoryCb TapFilterFactory::createFilterFactoryFromProtoTyped(
   };
 }
 
-Http::FilterFactoryCb
-TapFilterFactory::createFilterFactory(const Json::Object& json_config,
-                                         const std::string& stats_prefix,
-                                         Server::Configuration::FactoryContext& context) {
-  envoy::config::filter::http::tap::v2alpha::Tap proto_config;
-  Config::FilterJson::translateTapFilter(json_config, proto_config);
-  return createFilterFactoryFromProtoTyped(proto_config, stats_prefix, context);
-}
-
 /**
  * Static registration for the tap filter. @see RegisterFactory.
  */
