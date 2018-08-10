@@ -11,10 +11,11 @@ load(
 
 envoy_package()
 
+# TODO (CEV): review deps
 envoy_cc_library(
-    name = "buffer_filter_lib",
-    srcs = ["buffer_filter.cc"],
-    hdrs = ["buffer_filter.h"],
+    name = "tap_filter_lib",
+    srcs = ["tap_filter.cc"],
+    hdrs = ["tap_filter.h"],
     deps = [
         "//include/envoy/event:dispatcher_interface",
         "//include/envoy/event:timer_interface",
@@ -30,10 +31,12 @@ envoy_cc_library(
         "//source/common/http:headers_lib",
         "//source/common/http:utility_lib",
         "//source/extensions/filters/http:well_known_names",
-        "@envoy_api//envoy/config/filter/http/buffer/v2:buffer_cc",
+        "@envoy_api//envoy/config/filter/http/tap/v2alpha:tap_cc",
+        "@envoy_api//envoy/data/httptap/v2alpha:capture",
     ],
 )
 
+# TODO (CEV): review deps
 envoy_cc_library(
     name = "config",
     srcs = ["config.cc"],
@@ -41,8 +44,8 @@ envoy_cc_library(
     deps = [
         "//include/envoy/registry",
         "//source/common/config:filter_json_lib",
-        "//source/extensions/filters/http:well_known_names",
-        "//source/extensions/filters/http/buffer:buffer_filter_lib",
         "//source/extensions/filters/http/common:factory_base_lib",
+        "//source/extensions/filters/http/tap:tap_filter_lib",
+        "//source/extensions/filters/http:well_known_names",
     ],
 )
