@@ -32,7 +32,7 @@ envoy_cc_library(
         "//source/common/http:utility_lib",
         "//source/extensions/filters/http:well_known_names",
         "@envoy_api//envoy/config/filter/http/tap/v2alpha:tap_cc",
-        "@envoy_api//envoy/data/httptap/v2alpha:capture",
+        "@envoy_api//envoy/data/httptap/v2alpha:capture_cc",
     ],
 )
 

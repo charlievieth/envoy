@@ -6,7 +6,7 @@
 #include <string>
 
 #include "envoy/config/filter/http/tap/v2alpha/tap.pb.h"
-#include "envoy/data/tap/v2alpha/capture.pb.h"
+#include "envoy/data/httptap/v2alpha/capture.pb.h"
 #include "envoy/http/filter.h"
 #include "envoy/stats/scope.h"
 #include "envoy/stats/stats_macros.h"
