@@ -1,0 +1,50 @@
+{
+  "projectName" : "envoy-tulsi",
+  "packages" : [
+    "",
+    "api",
+    "api/bazel",
+    "test/common/event",
+    "api/docs",
+    "api/envoy/admin/v2alpha",
+    "api/envoy/api/v2",
+    "api/envoy/api/v2/auth",
+    "api/envoy/api/v2/cluster",
+    "api/envoy/api/v2/core",
+    "api/envoy/api/v2/endpoint",
+    "api/envoy/api/v2/listener",
+    "api/envoy/api/v2/ratelimit",
+    "api/envoy/config/filter/http/health_check/v2",
+    "api/envoy/config/filter/http/rbac/v2",
+    "api/envoy/config/filter/accesslog/v2",
+    "api/envoy/service/load_stats/v2",
+    "api/envoy/data/accesslog/v2",
+    "api/envoy/api/v2/route",
+    "api/envoy/config/accesslog/v2",
+    "api/envoy/config/bootstrap/v2",
+    "api/envoy/config/filter/fault/v2",
+    "api/envoy/config/filter/http/buffer/v2",
+    "api/envoy/config/filter/http/ext_authz/v2alpha",
+    "api/envoy/config/filter/http/fault/v2",
+    "api/envoy/config/filter/http/gzip/v2",
+    "api/envoy/config/filter/http/header_to_metadata/v2",
+    "api/envoy/config/filter/http/ip_tagging/v2",
+    "api/envoy/config/filter/http/jwt_authn/v2alpha",
+    "api/envoy/config/filter/http/lua/v2",
+    "api/envoy/config/filter/http/rate_limit/v2",
+    "api/envoy/config/filter/http/squash/v2",
+    "api/envoy/config/filter/http/tap/v2alpha",
+    "api/envoy/config/filter/http/transcoder/v2",
+    "api/envoy/data/core/v2alpha",
+    "api/envoy/data/httptap/v2alpha",
+    "api/examples/service_envoy",
+    "api/envoy/data/tap/v2alpha",
+    "api/envoy/service/accesslog/v2"
+  ],
+  "configDefaults" : {
+    "optionSet" : {
+
+    }
+  },
+  "workspaceRoot" : ".."
+}

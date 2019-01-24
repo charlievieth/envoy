@@ -1,0 +1,10 @@
+{
+  "optionSet" : {
+    "WorkspaceRootPath" : {
+      "p" : "/Users/cvieth/src/envoy-private/envoy"
+    },
+    "BazelPath" : {
+      "p" : "/usr/local/bin/bazel"
+    }
+  }
+}
